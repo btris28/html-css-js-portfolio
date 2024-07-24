@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 90%;
     
     
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -62,8 +66,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: transparent;
     border: 2px solid transparent;
     text-decoration: none;
@@ -291,7 +295,7 @@ button {
     margin-bottom: 20px;
 }
 
-.card-button {
+/*.card-button {
     display: inline-block;
     background-color: #3498db;
     color: #fff;
@@ -299,6 +303,40 @@ button {
     border-radius: 5px;
     padding: 10px 15px;
     text-align: center;
+}*/
+
+.extra {
+    display: none;
+}
+p {
+    display: inline;
+}
+input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+}
+label {
+    position: relative;
+    padding: 1em;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+label:before {
+    content: "Read More";
+}
+input[type="checkbox"]:checked ~ label:before
+{
+    content: "Read Less";
+}
+.dots:has(~input[type="checkbox"]:checked) {
+    display: none;
+}
+.extra:has(~input[type="checkbox"]:checked) {
+    display: inline;
 }
 
 
