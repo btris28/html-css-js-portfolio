@@ -91,9 +91,10 @@ body {
     top: 150px;
     left: 15px;
     background-color: #eaeaea;
-    height: 400px;
+    height: 415px;
     width: 122%;
     position: relative;
+    border-radius: 1%;
   }
 
 .title {
@@ -128,7 +129,7 @@ body {
 .inputBox span {
     position: absolute;
     left: 7px;
-    padding: 10px;
+    padding: 12px;
     pointer-events: none;
     font-size: 0.90em;
     color: #8c8c8c;
@@ -169,6 +170,13 @@ body {
     text-align-last: left;
     line-height: 1.2;
     
+}
+
+.example {
+    font-size: 15px;
+    position: absolute;
+    left: 90px;
+    text-align: left;
 }
 
 
@@ -293,6 +301,11 @@ button {
     font-size: 15px;
     color: #666;
     margin-bottom: 20px;
+}
+
+.creator {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*.card-button {
